@@ -1,0 +1,157 @@
+
+.sectionLog,
+.interactive,
+label{
+    display: flex;
+    align-items: center;
+}
+
+.interactive::before{ 
+    content: '';
+    position: absolute; /*fa riferimento all'header che ha position: relative*/
+    background-color: rgba(0, 0, 0, 0.65);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 20px;
+}
+
+.interactive{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position: relative;
+    border: 3px solid var(--color-green);
+    border-radius: 20px;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.6em;
+    height: 800px;
+    width:  85%;
+    background-image: url("images/logHeader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.interactive p,
+.interactive h1,
+.interactive h3,
+.interactive form{
+    z-index: 1;
+}
+
+
+label{
+    padding: 3px;
+    justify-content: space-between;
+    margin: 5px 0 5px 0;
+}
+
+
+
+form select{
+    appearance: none;
+    padding: 1px 2px;
+
+}
+
+form select,
+form input{
+    margin-left: 0.5em;
+    border: 2.3px solid lightgray;;
+    border-radius: 5px;
+    background-color: rgba(211, 211, 211, 0.527);
+}
+
+form select:focus,
+form input:focus{
+    background-color: lightgray;
+}
+
+form select:hover,
+form input:hover{
+    background-color: rgba(144, 238, 144, 0.356);
+}
+
+input[type=submit]{
+    border: none;    
+    color: black;       
+    font-weight: bold;  
+    height: 25px;    
+    width: 80px;    
+    cursor: pointer;   
+}
+
+.errorSpan{
+    color: var(--color-magenta);
+    border-bottom: 1.5px solid var(--color-magenta);
+}
+
+.trueSpan{
+    color: var(--color-green);
+    border-bottom: 1.5px solid var(--color-green);
+}
+
+
+.trueSpan,
+.errorSpan{
+    font-size: 0.7em;
+    border-radius: 20px;
+    padding: 2px;
+    font-weight: lighter;
+    text-align: right;
+}
+
+.error{
+    color: var(--color-magenta);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.errorSpan,
+.trueSpan
+.error,
+.interactive{
+    font-family: 'Orbitron', Courier;
+}
+
+.interactive img{
+    z-index: 1;
+    height: 60px;
+    width: 60px;
+}
+
+input[type=checkbox]{
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    appearance: none;
+}  
+
+input[type=checkbox]:checked{
+    background-color: black;
+}
+
+
+@media (max-width: 540px){
+
+    label,
+    select,
+    form input{
+        font-size: 0.8em;
+    }
+ 
+    h1{
+        font-size: 1.2em;
+    }
+
+    .interactive{
+        height: 500px;
+    }
+
+    .interactive img{
+        height: 40px;
+        width: 40px;
+    }
+}

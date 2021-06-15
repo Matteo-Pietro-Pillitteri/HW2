@@ -1,0 +1,44 @@
+
+.otherdiv{
+    border-top:  3px solid var(--color-magenta);
+    border-bottom: 3px solid var(--color-magenta);
+    border-radius: 13px;
+    width: 47%;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.otherdiv h4,
+.otherdiv h6{
+    margin: 1px;
+}
+
+header{
+    background-image: url("images/contattaci.gif");
+}
+
+
+header h1{
+    color: rgba(0, 0, 0, 0.904);
+}
+
+
+@media (max-width: 927px){
+    .otherdiv h4,
+    .otherdiv h6{
+       font-size: 0.8em;
+    }
+}
+
+@media (max-width: 540px){
+   .otherdiv h4,
+   .otherdiv h6{
+       font-size: 0.5em;
+   }
+
+   .otherdiv{
+       margin-left: 5px;
+   }
+}
