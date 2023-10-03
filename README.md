@@ -1,4 +1,4 @@
-# hw2
+# HW2
 Sito completo | Laravel
 
 ## Nome:
